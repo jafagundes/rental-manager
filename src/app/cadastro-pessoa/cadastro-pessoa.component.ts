@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPessoaComponent implements OnInit {
 
+  locador = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  isLocador(e){
+    this.locador = e.target.checked;
   }
 
 }
